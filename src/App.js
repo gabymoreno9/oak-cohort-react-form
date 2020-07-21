@@ -1,19 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import camera from './camera.jpeg';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <div className="first">
-          first box
+          <img src= {camera} alt ='camera'/>;
+          Photography
         </div>
         <div className="second">
           second box
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>hellpos        </p>
       </div>
     </div>
   );
