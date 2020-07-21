@@ -1,10 +1,10 @@
 :root {
-  --green: #2AC4A2;
+  --green: #239A99;
 }
 
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom right, #2AC4A2, #15A2A9);
+  background-image: linear-gradient(-90deg, #15A2A9, #2AC4A2);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,10 +19,14 @@
   height: 70vh;
   background-color: #fff;
   color: #000000;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   display: flex;
   align-content: stretch;
+}
+
+.form{
+  padding-top: 20px;
 }
 
 .first{
@@ -35,6 +39,27 @@
 .second{
   flex: 1;
   background-color: #fff;
+  padding-top: 30px;
+}
+
+.registration{
+  font-weight: bold;
+  font-size: 30px;
+  color:var(--green)
+}
+.subtitle{
+  font-weight: normal;
+  font-size: 15px;
+  color: grey;
+}
+
+.logo{
+  color: #fff;
+  position: absolute;
+  font-family: arial;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 20px;
 }
 
 .App-logo {
