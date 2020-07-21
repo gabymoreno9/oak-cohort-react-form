@@ -6,19 +6,18 @@ import { FormControl,
         FormGroup,
         Form,
         FormLabel,
-        Button } from 'react-bootstrap';
+        Button,
+        Radio } from 'react-bootstrap';
 
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="first">
-        <div className="logo">
-              Photography.
-            </div>
-          <img src= {camera} alt ='camera'/>
-           
+        <div className="first" style={{ backgroundImage: `url(${camera})` }}>
+          <div className="logo">
+            Photography.
+          </div>
         </div>
         <div className="second">
           <div className="registration">
@@ -30,7 +29,7 @@ function App() {
 
           <div className= "form">
             <Form>
-              <Form.Group controlId="formBasicEmail">
+              <Form.Group controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="name" placeholder="Tanvir Hasan" />
                 <Form.Text className="text-muted">
@@ -44,15 +43,37 @@ function App() {
                 </Form.Text>
               </Form.Group>
 
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Date of Birth</Form.Label>
+                <Form.Control type="date" placeholder="May 25, 1977" />
+                <Form.Text className="text-muted">
+                </Form.Text>
               </Form.Group>
-              
+
+              <Form.Group controlId="formBasicCity">
+                <Form.Label>City</Form.Label>
+                <Form.Control type="name" placeholder="Dhaka" />
+                <Form.Text className="text-muted">
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group controlId="formBasicCountry">
+                <Form.Label>Country</Form.Label>
+                <Form.Control type="country" placeholder="Bangladesh" />
+                <Form.Text className="text-muted">
+                </Form.Text>
+              </Form.Group>
+
+              <Button variant="primary" type="submit">
+                Cancel
+              </Button>
+
               <Button variant="primary" type="submit">
                 Submit
               </Button>
             </Form>
+
+            
           </div>
         </div>
       </div>
