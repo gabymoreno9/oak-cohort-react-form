@@ -1,19 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
 import camera from './camera.jpeg';
 import { FormControl,
-        FormGroup,
-        Form,
-        FormLabel,
-        Button,
-        Radio } from 'react-bootstrap';
+         FormGroup,
+         Form,
+         FormLabel,
+         Button,
+         ButtonGroup,
+         ToggleButton,
+         Radio } from 'react-bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="app-container">
         <div className="first" style={{ backgroundImage: `url(${camera})` }}>
           <div className="logo">
             Photography.
@@ -32,15 +36,13 @@ function App() {
               <Form.Group controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="name" placeholder="Tanvir Hasan" />
-                <Form.Text className="text-muted">
-                </Form.Text>
+                <Form.Text className="text-muted" />
               </Form.Group>
 
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="name" placeholder="ftanvirhasan@gmail.com" />
-                <Form.Text className="text-muted">
-                </Form.Text>
+                <Form.Text className="text-muted" />
               </Form.Group>
 
               <Form.Group controlId="formBasicEmail">
@@ -53,16 +55,31 @@ function App() {
               <Form.Group controlId="formBasicCity">
                 <Form.Label>City</Form.Label>
                 <Form.Control type="name" placeholder="Dhaka" />
-                <Form.Text className="text-muted">
-                </Form.Text>
+                <Form.Text className="text-muted" />
               </Form.Group>
 
               <Form.Group controlId="formBasicCountry">
                 <Form.Label>Country</Form.Label>
                 <Form.Control type="country" placeholder="Bangladesh" />
-                <Form.Text className="text-muted">
-                </Form.Text>
+                <Form.Text className="text-muted" />
               </Form.Group>
+
+              <Form.Group controlId="formBasicCountry">
+                <Form.Label>Type</Form.Label>
+                <ButtonGroup toggle>
+                  <ToggleButton type="radio" variant="secondary">
+                    Bronze
+                  </ToggleButton>
+                  <ToggleButton type="radio" variant="secondary">
+                    Silver
+                  </ToggleButton>
+                  <ToggleButton type="radio" variant="secondary">
+                    Gold
+                  </ToggleButton>
+                </ButtonGroup>
+              </Form.Group>
+
+              <br />
 
               <Button variant="primary" type="submit">
                 Cancel

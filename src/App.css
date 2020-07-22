@@ -1,5 +1,6 @@
 :root {
   --green: #239A99;
+  --purple: #332B57;
 }
 
 .App {
@@ -14,8 +15,8 @@
   color: white;
 }
 
-.container{
-  width: 70%;
+.app-container {
+  width: 80%;
   height: 70vh;
   background-color: #fff;
   color: #000000;
@@ -31,26 +32,34 @@
 }
 
 .form-label{
-padding-right: 10px;
-padding-left: 50px;
-padding-bottom: 10px;
-text-align: left;
-font-size: 12px;
-font-weight: bold;
-width: 126px;
-flex:1;
+  padding-right: 10px;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  width: 126px;
+  flex: 1;
+  margin-bottom: 0;
 }
 
-.form-group{
+.form-group {
   padding-bottom: 10px;
   display: flex;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .form-control{
   border: none;
   background-color: #F3F3F3;
   border-radius: 6px;
-  padding: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  flex: 2;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.btn-group {
   flex: 2;
   margin-right: 20px;
 }
@@ -79,6 +88,23 @@ flex:1;
   font-weight: normal;
   font-size: 15px;
   color: grey;
+}
+
+.btn-primary{
+  padding: 5px 15px;
+  border: none;
+  margin-left: 10px;
+  width: 100px;
+  background-color: var(--purple);
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-secondary{
+  color: #000;
+  background-color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .logo{
