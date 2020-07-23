@@ -22,6 +22,15 @@ function App() {
           <div className="logo">
             Photography.
           </div>
+          <div className="up-title">
+            CLICK FOR YOUR SHOOT
+          </div>
+          <div className="main-logo">
+            Photography.
+          </div>
+          <div className="low-title">
+            JOURNEY EVERYWHERE
+          </div>
         </div>
         <div className="second">
           <div className="registration">

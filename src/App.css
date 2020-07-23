@@ -114,6 +114,27 @@
   padding-left: 10px;
   padding-top: 10px;
   font-size: 20px;
+  font-weight: lighter;
+}
+
+.main-logo{
+  font-weight: bolder;
+  color: #fff;
+  font-size: 30px;
+}
+
+.up-title{
+  color: #fff;
+  padding-top: 90px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.low-title{
+  color: #fff;
+  padding-top: 250px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 .App-logo {
