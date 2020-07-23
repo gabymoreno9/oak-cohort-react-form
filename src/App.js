@@ -54,6 +54,21 @@ function App() {
                 <Form.Text className="text-muted" />
               </Form.Group>
 
+              <Form.Group controlId="formBasicCountry">
+                <Form.Label>Type</Form.Label>
+                <ButtonGroup toggle>
+                  <ToggleButton type="radio" variant="secondary">
+                    Male
+                  </ToggleButton>
+                  <ToggleButton type="radio" variant="secondary">
+                    Female
+                  </ToggleButton>
+                  <ToggleButton type="radio" variant="secondary">
+                    Nonbinary
+                  </ToggleButton>
+                </ButtonGroup>
+              </Form.Group>
+
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Date of Birth</Form.Label>
                 <Form.Control type="date" placeholder="May 25, 1977" />
@@ -88,15 +103,19 @@ function App() {
                 </ButtonGroup>
               </Form.Group>
 
-              <br />
-
-              <Button variant="primary" type="submit">
-                Cancel
+            <div className = "buttons">
+              <Button variant="primary" type="secondary">
+                <div className = "cancel">
+                  CANCEL
+                </div>
               </Button>
 
               <Button variant="primary" type="submit">
-                Submit
+              <div className = "submit">
+                  SUBMIT
+                </div>
               </Button>
+            </div>
             </Form>
 
             

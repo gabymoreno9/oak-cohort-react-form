@@ -142,6 +142,20 @@
   font-weight: lighter;
 }
 
+.cancel{
+  font-size: 12px;
+}
+
+.submit{
+  font-size: 12px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
